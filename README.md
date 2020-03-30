@@ -1,8 +1,8 @@
-#Cut emprendedor
+# Cut emprendedor
 
 This is an application exersice for univercity
 
-###Run proyect
+### Run proyect
 Install dependencies
 
 ```bash
