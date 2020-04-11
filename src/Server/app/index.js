@@ -1,4 +1,5 @@
 const express = require('express')
+const morgan = require('morgan')
 const cors = require('cors')
 
 const { port } = require('../config')
@@ -11,6 +12,7 @@ app.set('port', port)
 // Middelwares
 app.use(express.json())
 app.use(cors())
+app.use(morgan('dev'))
 
 // Routes
 app.use('/api/seller', sellerRoute)

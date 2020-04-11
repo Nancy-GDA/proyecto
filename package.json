@@ -28,6 +28,7 @@
     "eslint-plugin-standard": "^4.0.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.2",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.7.0",
@@ -38,9 +39,9 @@
   },
   "scripts": {
     "dev:server": "webpack-dev-server",
-	"build": "webpack -w --quiet",
+    "build": "webpack -w --quiet",
     "serv": "nodemon src/Server/index.js",
-	"start":"concurrently \"npm:serv \"npm:build "
+    "start": "concurrently \"npm:serv \"npm:build "
   },
   "repository": {
     "type": "git",
