@@ -37,8 +37,10 @@
     "webpack-dev-server": "^3.10.3"
   },
   "scripts": {
-    "start": "webpack-dev-server",
-	"server:dev": "nodemon src/Server/index.js"
+    "dev:server": "webpack-dev-server",
+	"build": "webpack -w --quiet",
+    "serv": "nodemon src/Server/index.js",
+	"start":"concurrently \"npm:serv \"npm:build "
   },
   "repository": {
     "type": "git",
