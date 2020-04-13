@@ -1,0 +1,8 @@
+.log
+.git
+.gitignore
+.DS_store
+README.md
+npm-debug.log*
+dist
+node_modules
